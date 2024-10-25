@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast JFNS</title>
+    <link rel="stylesheet" href="jf.css">
+</head>
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#episodios">Episódios</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Inicial -->
+    <section id="home">
+        <div class="hero">
+            <h1>Bem-vindo ao Podcast JFNS</h1>
+            <p>Ouça nossas conversas sobre tecnologia, inovação e muito mais.</p>
+            <a href="#episodios" class="btn">Ouça Agora</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="container">
+        <h2>Sobre o Podcast</h2>
+        <p>Este podcast é dedicado a explorar ideias inovadoras, trazer convidados especiais e discutir temas atuais sobre tecnologia e cultura.</p>
+    </section>
+
+    <!-- Seção de Episódios -->
+    <section id="episodios" class="container">
+        <h2>Episódios Recentes</h2>
+        <div class="episode-list">
+            <div class="episode">
+                <h3>Episódio 1: O Futuro da Tecnologia</h3>
+                <audio controls>
+                    <source src="audioJF.mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+                <p>Discussão sobre as tendências tecnológicas que moldarão o futuro.</p>
+            </div>
+            <div class="episode">
+                <h3>Episódio 2: Inteligência Artificial e o Impacto na Sociedade</h3>
+                <audio controls>
+                    <source src="episodio2.mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+                <p>Analisamos os benefícios e os riscos da IA no nosso dia a dia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="container">
+        <h2>Entre em Contato</h2>
+        <form action="submit_form.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Podcast JFNS © 2024 - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
